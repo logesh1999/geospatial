@@ -1,0 +1,1 @@
+OSmnx has is fact been desined to fetch and use OpenStreetMap data in the simplest way possible.

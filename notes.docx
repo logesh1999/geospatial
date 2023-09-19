@@ -1,0 +1,32 @@
+1. Its calculating the risk of properties depending on their location, designing new architecture development, planning shipment of goods, and finding possible routes between different locations.
+2. Geospatial data is typically stored in two possible formats : Raster and Vector
+
+Raster : Represents data as a matrix of pixels (therefore having a fixeed resolution). In this representation, each pixel can be assigned a different
+        value and multiple grids stacked together can be used in order to augment even more the same image. For example, the same image could be stored 
+        using 3 channel/bands(e.g. RGB = Red, Green, Blue) or with a single channel.
+
+Vectors : Can be used to abstract geometrics of the real-world using elements such as points, lines, polygons, etc.. and they can usually be stored in conjunction
+        with some useful metadata about the objects they are representating (e,g. name, address, owner, etc..). Since they are stored as mathematically objects, it is 
+        possible to zoom in on vectors without compromising resolution
+
+Working with Geospatial data, many different forms of operations/transformations are usually required.
+
+    Conversion from non-tabular / raw binary formats to vector/raster.
+
+    Bucketing continuos data into discrete categories.
+
+    Extracting polygons / features from data.
+
+    Handling no data and outliers.
+
+    Reprojecting in different coordinate systems.
+
+    Generating lower resolution overviews of data to handle different zoom levels
+    and not overloading rendering or images.
+
+
+Geo Panda : Is an open-source library specifically designed to extend pandas capabilities to handle 
+            Geospatial data.
+
+Well-known text (WKT) : Is used as the text markup language for representating our vector geometry
+                        objects but other formats can generally be used such as GeoJson.
